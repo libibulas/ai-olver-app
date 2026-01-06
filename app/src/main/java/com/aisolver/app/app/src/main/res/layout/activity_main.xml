@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI 搜题助手"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. 请先获取 DeepSeek API Key"
+        android:textColor="#FF5722" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="访问 https://platform.deepseek.com"
+        android:autoLink="web"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/editTextApiKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="粘贴你的 sk-xxxxxxxxxx"
+        android:inputType="textNoSuggestions"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存 API Key"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="启动悬浮球"
+        android:backgroundTint="#2196F3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用方法：\n1. 打开任意题目页面\n2. 点击右下角蓝色小球\n3. 框选题目区域\n4. 等待答案出现"
+        android:layout_marginTop="30dp"
+        android:textSize="14sp"
+        android:textColor="#666666" />
+</LinearLayout>
